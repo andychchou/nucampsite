@@ -31,7 +31,7 @@ class Home extends Component {
             partners: PARTNERS
         }
     }
-
+    //creates the header
     static navigationOptions ={
         title: 'Home'
     }

@@ -9,7 +9,7 @@ function RenderCampsite({campsite}) {
             <Card
                 featuredTitle={campsite.name}
                 image={require('./images/react-lake.jpg')}>
-                <Text style={{margin:10}}>
+                <Text style={{margin: 10}}>
                     {campsite.description}
                 </Text>
             </Card>
@@ -27,11 +27,12 @@ class CampsiteInfo extends Component {
         };
     }
 
-    static navigationOptions ={
+    static navigationOptions = {
         title: 'Campsite Information'
     }
 
     render() {
+        //'campsiteId' is passed from DirectoryComponent, which has the value of a selected campsite's id (campsite.id)
         const campsiteId = this.props.navigation.getParam('campsiteId');
         const campsite = this.state.campsites.filter(campsite => campsite.id === campsiteId)[0];
         return <RenderCampsite campsite={campsite} />;
