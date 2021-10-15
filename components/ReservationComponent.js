@@ -98,7 +98,7 @@ class Reservation extends Component {
                     animationType={'slide'}
                     transparent={false}
                     visible={this.state.showModal}
-                    onRequestClose={() => this.toggleModal}
+                    onRequestClose={() => this.toggleModal()}
                 >
                     <View style={styles.modal}>
                     <Text style={styles.modalTitle}>Search Campsite Reservations</Text>
