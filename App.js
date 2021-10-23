@@ -8,7 +8,7 @@ import Loading from './components/LoadingComponent';
 
 const { persistor, store } = ConfigureStore();
 
-LogBox.ignoreLogs(['interpolate', 'It appears that you are using old', 'VirtualizedLists should never']);
+LogBox.ignoreLogs(['interpolate', 'It appears that you are using old', 'VirtualizedLists should never', 'expo-permissions is now']);
 
 export default function App() {
   return (
